@@ -1,0 +1,26 @@
+/* Добавьте это в конец вашего файла style.css */
+
+.skips-counter {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+#skip-btn {
+    background-color: #e67e22;
+}
+
+#skip-btn:hover {
+    background-color: #d35400;
+}
+
+/* Стиль для кнопки пропуска, когда попытки закончились */
+#skip-btn:disabled {
+    background-color: #7f8c8d !important;
+    cursor: not-allowed;
+    opacity: 0.6;
+    transform: none;
+    box-shadow: none;
+}

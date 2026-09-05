@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай Бравлера!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Кто этот бравлер? 🤔</h1>
+
+    <!-- Счетчик оставшихся пропусков -->
+    <div class="skips-counter" id="skips-display">Пропуски: ❤️ ❤️ ❤️</div>
+    
+    <!-- Контейнер для эмодзи-символов бравлера -->
+    <div class="img-container">
+        <div id="brawler-image" style="font-size: 100px; line-height: 250px;"></div>
+    </div>
+
+    <!-- Текстовая подсказка-описание -->
+    <p id="brawler-hint" style="font-size: 1.2rem; font-style: italic; max-width: 400px; margin: 10px auto; color: #ffb4f0;"></p>
+
+    <!-- Поле ввода и кнопки -->
+    <div class="quiz-box">
+        <input type="text" id="answer-input" placeholder="Введите имя бравлера..." autocomplete="off">
+        <button onclick="checkAnswer()" id="check-btn">Проверить</button>
+        <button onclick="skipBrawler()" id="skip-btn">Пропустить ⏭️</button>
+        <button onclick="nextBrawler()" id="next-btn" style="display: none;">Следующий ➡️</button>
+    </div>
+
+    <p id="result-message"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
